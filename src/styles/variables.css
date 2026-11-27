@@ -1,0 +1,20 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #23332a;
+  background: #f6f8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+
+  --green: #2e7d32;
+  --green-dark: #1b5e20;
+  --green-soft: #e9f4e9;
+  --green-pale: #f2f8f1;
+  --text: #23332a;
+  --muted: #78847b;
+  --line: #e9eee8;
+  --surface: #fff;
+  --background: #f6f8f5;
+  --shadow: 0 8px 26px rgba(37, 65, 40, 0.06);
+  --radius: 18px;
+  --font-heading: 'Manrope', sans-serif;
+}

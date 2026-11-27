@@ -1,0 +1,33 @@
+{
+  "name": "apna-khata",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:api": "node --watch backend/server.js",
+    "dev:web": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:api": "node backend/server.js",
+    "test": "node --test backend/test/*.test.js src/services/*.test.js src/utils/*.test.js src/i18n/*.test.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.18.7"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "vite": "^6.4.4"
+  }
+}
